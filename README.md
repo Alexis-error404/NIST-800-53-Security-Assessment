@@ -1,23 +1,27 @@
-# NIST SP 800-53 Security Assessment Portfolio
+# NIST SP 800-53 Security Assessment
 
-A simulated GRC security-control assessment of a Windows Server / Active Directory environment using selected **NIST SP 800-53 Rev. 5** controls.
+A security control assessment of a Windows Server / Active Directory lab environment using selected **NIST SP 800-53 Rev. 5** controls.
 
-> **Portfolio disclaimer:** Educational home-lab simulation. This is not an official federal authorization or production client assessment.
+> **Scope note:** This repository documents a lab-based assessment and is not an official federal authorization or production assessment.
 
-## Scenario
-I am acting as a Junior GRC / Security Controls Analyst assessing a fictional organization's Active Directory environment.
-
-**In scope:** Windows Server domain controller, Active Directory, user and privileged accounts, Group Policy, Windows endpoints, security logs, and patch configuration.
+## Environment in Scope
+- Windows Server Domain Controller
+- Active Directory Domain Services
+- User and privileged accounts
+- Group Policy Objects
+- Windows endpoints
+- Windows Security Event Logs
+- Patch and update configuration
 
 ## Assessment Workflow
-1. Define system scope and boundary.
-2. Select relevant security controls.
-3. Define expected evidence.
-4. Use examine, interview, and test concepts.
-5. Assess implementation status.
-6. Document findings and business risk.
-7. Recommend remediation.
-8. Track weaknesses in a POA&M-style artifact.
+1. Define the system scope and boundary.
+2. Select applicable security controls.
+3. Identify required assessment evidence.
+4. Apply examine, interview, and test assessment methods.
+5. Determine implementation status.
+6. Document findings and associated risk.
+7. Recommend corrective actions.
+8. Track remediation through a POA&M.
 
 ## Selected Controls
 | Control | Area | Result |
@@ -34,23 +38,17 @@ I am acting as a Junior GRC / Security Controls Analyst assessing a fictional or
 | IR-4 | Incident Handling | Not Implemented |
 
 ## Key Findings
-- MFA is absent for privileged access in the simulated environment.
-- Formal recurring account and privileged-access reviews are incomplete.
-- Security logging exists, but formal review/escalation procedures are missing.
-- Patch and baseline validation require formal tracking.
-- Incident handling procedures need to be documented and exercised.
+- MFA is absent for privileged access in the assessed lab environment.
+- Recurring account and privileged-access reviews require formal documentation.
+- Security logging is enabled, but review and escalation procedures require further definition.
+- Patch management and configuration-baseline validation require formal tracking.
+- Incident handling procedures require documentation and testing.
 
 ## Repository Artifacts
-- `assessment/security-control-assessment.md` — detailed control tests
-- `assessment/findings-and-recommendations.md` — audit-style findings
+- `assessment/security-control-assessment.md` — detailed control assessment
+- `assessment/findings-and-recommendations.md` — findings and corrective actions
 - `governance/poam.md` — remediation tracking
-- `evidence/evidence-guide.md` — evidence collection plan
-- `interview/interview-guide.md` — interview questions and talking points
+- `evidence/evidence-guide.md` — evidence collection and validation guidance
 
-## Skills Demonstrated
-NIST SP 800-53 · control assessment · evidence collection · gap analysis · POA&M · Active Directory security · least privilege · audit logging · remediation planning · risk communication
-
-## 30-Second Interview Explanation
-“I built a simulated NIST 800-53 assessment around a Windows Server and Active Directory lab. I selected controls relevant to identity, least privilege, logging, configuration management, patching, and incident response. For each control I defined expected evidence, assessed implementation, documented gaps and risk, and created remediation and POA&M items. It helped me connect technical administration with GRC and RMF work.”
-
-**Target roles:** Junior GRC Analyst · ISSO · RMF Analyst · Security Compliance Analyst · Cybersecurity Risk Analyst
+## Assessment Areas
+NIST SP 800-53 · security control assessment · evidence collection · gap analysis · POA&M · Active Directory security · least privilege · audit logging · remediation planning · risk analysis
